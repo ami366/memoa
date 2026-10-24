@@ -171,7 +171,7 @@ button,input,textarea,select{font:inherit}button{cursor:pointer;border:0;color:i
 </div>
  <button id="newBtn" class="newbtn">＋　新しいメモ</button>
  <div id="nav" class="navsection"></div>
- <div class="sidebarbottom"><div class="catmanage"><span class="tinyCloud"></span> 大切なことばを、そっと保管。</div></div>
+ 
 </div>
 </section>
 <section class="listpane">
@@ -193,7 +193,7 @@ button,input,textarea,select{font:inherit}button{cursor:pointer;border:0;color:i
 (function(){
 "use strict";
 var NK="kopimemo.notes.clean.v1",TK="kopimemo.trash.clean.v1",CK="kopimemo.categories.clean.v1";
-var defaults=[{name:"仕事",color:"#f6d6e3"},{name:"日常",color:"#e5daf7"},{name:"配信",color:"#d7ecf6"},{name:"その他",color:"#f7e5c9"}];
+var defaults=[];
 var notes=[],trash=[],cats=[],filter="すべて",selected=null,editing=null,sortMode=0,timer;
 function E(x){return document.getElementById(x)}
 function esc(v){return String(v==null?"":v).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
